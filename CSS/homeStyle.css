@@ -234,7 +234,7 @@ a:hover {
 .loadingBarAnim {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 .loading-bar {
   display: inline-block;
