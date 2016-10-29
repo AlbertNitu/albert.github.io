@@ -1,0 +1,233 @@
+body, html {
+  background-color: #D1EDF1;
+}
+
+
+/* Navigation Menu*/
+ul {
+  margin-top: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: 'Raleway';
+  font-size: 130%;
+  width: 100%;
+}
+li {
+  float: left;
+  display: inline-block;
+  width: 120px;
+  color: #FFFFFF;
+  background-color: #B0C4DE;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -o-transition: .7s;
+}
+li:hover, li:active {
+  background-color: #D1EDF1;
+  color: #B0C4DE;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+li:nth-child(2) {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+li:nth-child(3) {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+li:last-child {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 160px;
+}
+.navigationMenu {
+  width: 100%;
+  float: left;
+  position: fixed;
+  left: 25%;
+  z-index: 99 !important;
+}
+.navAndTitle {
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  background-color: #D1EDF1;
+  z-index: 9 !important;
+}
+
+
+/* Title and Header */
+.title {
+  margin: 15px;
+  color: dodgerblue;
+  font-family: 'Roboto';
+  font-size: 270%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+/* Body */
+.intro {
+  padding: 5px;
+  padding-left: 8px;
+  border: 2px solid cornflowerblue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #85d0ff;
+  font-family: 'Roboto';
+  font-size: 115%;
+}
+
+
+.introHeader {
+  font-family: 'Raleway';
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+
+.normalIntro {
+  font-size: 80%;
+  color: #1a65be;
+  padding-top: 2px;
+}
+
+
+a {
+  font-weight: bold;
+  transition: 0.5s;
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+
+a:hover {
+  transition: 0.5s;
+  color: #1a65be;
+  cursor: pointer;
+}
+
+@keyframes fade {
+    0%, 50% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes dot-anim {
+    0% {
+        top: -4px;
+    }
+    50% {
+        top: 4px;
+    }
+    100% {
+        top: -4px;
+    }
+}
+
+.loader {    
+  display: inline-block;  
+  animation: fade 1s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 200px;
+  margin: 0 auto;
+  bottom: 150px;
+}
+
+.loader > div{
+  float: left;
+  display: block;
+  width: 30px;
+  margin-left: 1px;
+  height: 4px;  
+  position: relative;
+  
+  transition: all 1s ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-name: dot-anim;
+}
+
+.blue{  
+  background-color: #4285F4;
+}
+
+.pink{
+  animation-delay: .2s;  
+  background-color: #EA4335;
+}
+
+.orange{
+  animation-delay: .4s;
+  background-color: orange;
+}
+
+.green{
+  animation-delay: .6s;
+  background-color: #34A853;
+}
+
+.lightBulbTitle {
+  position: fixed;
+  top: 20px;
+  left: 34%;
+  z-index: 99 !important;
+}
+
+.atomTitle {
+  position: fixed;
+  top: 20px;
+  right: 33%;
+  z-index: 99 !important;
+}
+
+.load-bar {
+  position: fixed;
+  width: 100%;
+  height: 6px;
+  background-color: #fdba2c;
+  bottom: 0;
+}
+.bar {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center;
+}
+.bar:nth-child(1) {
+  background-color: #da4733;
+  animation: loading 6s linear infinite;
+}
+.bar:nth-child(2) {
+  background-color: #3b78e7;
+  animation: loading 6s linear 1s infinite;
+}
+.bar:nth-child(3) {
+  background-color: #fdba2c;
+  animation: loading 6s linear 2s infinite;
+}
+@keyframes loading {
+    from {left: 50%; width: 0;z-index:100;}
+    33.3333% {left: 0; width: 100%;z-index: 10;}
+    to {left: 0; width: 100%;}
+}
