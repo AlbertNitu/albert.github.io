@@ -233,8 +233,8 @@ a:hover {
 }
 .loadingBarAnim {
   position: absolute;
-  top: 230;
-  left: 50%;
+  top: 310;
+  left: 45%;
 }
 .loading-bar {
   display: inline-block;
