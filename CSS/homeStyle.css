@@ -4,7 +4,7 @@ body, html {
 
 
 /* Navigation Menu*/
-ul {
+ul:not(#codingLanguages) {
   margin-top: 0px;
   list-style-type: none;
   overflow: hidden;
@@ -12,7 +12,7 @@ ul {
   font-size: 130%;
   width: 100%;
 }
-li {
+li:not(#codingLanguagesLi) {
   float: left;
   display: inline-block;
   width: 120px;
@@ -27,7 +27,7 @@ li {
   -moz-transition: .7s;
   -o-transition: .7s;
 }
-li:hover, li:active {
+li:hover:not(#codingLanguagesLi), li:active:not(#codingLanguagesLi) {
   background-color: #D1EDF1;
   color: #B0C4DE;
   cursor: pointer;
@@ -38,15 +38,15 @@ li:hover, li:active {
   -o-transition: 0.7s;
   transition: 0.7s;
 }
-li:nth-child(2) {
+li:nth-child(2):not(#codingLanguagesLi) {
   padding-left: 10px;
   padding-right: 15px;
 }
-li:nth-child(3) {
+li:nth-child(3):not(#codingLanguagesLi) {
   padding-left: 15px;
   padding-right: 15px;
 }
-li:last-child {
+li:last-child:not(#codingLanguagesLi) {
   padding-right: 12px;
   padding-left: 12px;
   width: 160px;
