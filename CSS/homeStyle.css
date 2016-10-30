@@ -149,7 +149,7 @@ a:hover {
   right: 0;
   width: 200px;
   margin: 0 auto;
-  bottom: 150px;
+  top: 600px;
 }
 
 .loader > div{
