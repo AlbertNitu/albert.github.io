@@ -3,18 +3,25 @@ body, html {
 }
 
 ::-webkit-scrollbar {
-  background-color: #B0C4DE;
+    width: 12px;
 }
-
-::-webkit-scrollbar-button {
-  background-color: #D1EDF1;
-  color: white;
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
-
+ 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #D1EDF1;
-  border: 1px solid #85d0ff;
-  border-radius: 50%;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: orange; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(245, 196, 109, 0.64);
 }
 
 /* Navigation Menu*/
