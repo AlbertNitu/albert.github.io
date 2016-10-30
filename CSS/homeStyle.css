@@ -2,6 +2,20 @@ body, html {
   background-color: #D1EDF1;
 }
 
+::-webkit-scrollbar {
+  background-color: #B0C4DE;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #D1EDF1;
+  color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D1EDF1;
+  border: 1px solid #85d0ff;
+  border-radius: 50%;
+}
 
 /* Navigation Menu*/
 ul:not(#codingLanguages) {
