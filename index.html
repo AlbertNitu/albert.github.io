@@ -2,6 +2,8 @@
 <html lang="en">
 
 
+
+
 <head>
   <title>Albert's website</title>
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
@@ -14,11 +16,15 @@
 </head>
 
 
+
+
 <body>
-  <div style="height: 2px; width: 340px; position: fixed; left: 30px; top: 105px; background-color: orange; z-index: 98 !important;"></div>
-  <div style="height: 2px; width: 330px; position: fixed; right: 30px; top: 105px; background-color: orange; z-index: 98 !important;"></div>
+  <div class="centerImage">
+    <img src="https://freeiconshop.com/files/edd/bulb-curvy-flat.png" class="lightBulbTitle" width=55 height=55 />
+    <img src="https://drslash.com/wp-content/uploads/2014/07/Neutron.png" class="atomTitle" width=60 height=60 />
+  </div>
   <div class="navAndTitle">
-    <h1 class="title">Albert's Website</h1><div class="navigationMenu">
+    <h1 class="title">Albert's Website</h1><div class="navigationMenu" style="position: absolute; z-index: 12;">
       <ul>
         <li id="home" onclick="home()">Home</li>
         <li id="about" onclick="about()">About Me</li>
@@ -26,6 +32,8 @@
         <li id="other" onclick="other()">Other Stuff</li>
       </ul>
     </div>
+  <div style="height: 2px; width: 340px; position: fixed; left: 30px; top: 105px; background-color: orange; z-index: 9;"></div>
+  <div style="height: 2px; width: 330px; position: fixed; right: 30px; top: 105px; background-color: orange; z-index: 9;"></div>
   </div>
   <br><br><br><br><br><br><br><br>
   <div id="homePage">
@@ -51,7 +59,14 @@
         personal website. Finally, you can also access my website by typing in <b>v.ht/anitu</b> instead of the entire URL.
       </span>
     </div>
-    <br><br><br>
+    <br>
+    <div class="loader">
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="orange"></div>
+      <div class="green"></div>
+    </div>
+    <br><br>
     <div class="intro">
       <span class="introHeader">A quick look at what's inside...</span><br>
       <span class="normalIntro">
@@ -98,15 +113,6 @@
       </div>
     </div>
     <br><br>
-    <img src="https://www.clipartkid.com/images/2/yellow-star-clip-art-at-clker-com-vector-clip-art-online-royalty-j67Flw-clipart.png" width=40 height=40 style="position: absolute; height: 40px; width: 40px; left: 49%; margin-left: -25px; bottom: -60px;" />
-    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/51575-200.png" width=40 height=40 style="position: absolute; height: 40px; width: 40px; left: 49%; margin-left: -25px; bottom: -120px;" />
-    <img src="https://www.clipartkid.com/images/2/yellow-star-clip-art-at-clker-com-vector-clip-art-online-royalty-j67Flw-clipart.png" width=40 height=40 style="position: absolute; height: 40px; width: 40px; left: 49%; margin-left: -25px; bottom: -170px;" />
-    <div class="loader">
-      <div class="blue"></div>
-      <div class="pink"></div>
-      <div class="orange"></div>
-      <div class="green"></div>
-    </div>
   </div>
   <div id="aboutPage" style="display: none;">
     <div class="intro"><span class="introHeader">A little bit about me...</span><br>
@@ -188,14 +194,10 @@
       </span>
     </div>
   </div>
-  <img src="https://freeiconshop.com/files/edd/bulb-curvy-flat.png" class="lightBulbTitle" width=55 height=55 />
-  <img src="https://drslash.com/wp-content/uploads/2014/07/Neutron.png" class="atomTitle" width=55 height=55 />
   <div class="load-bar">
     <div class="bar"></div>
     <div class="bar"></div>
     <div class="bar"></div>
   </div>
 </body>
-
-
 </html>
