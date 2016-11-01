@@ -2,6 +2,7 @@ body, html {
   background-color: #D1EDF1;
 }
 
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -23,6 +24,7 @@ body, html {
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(245, 196, 109, 0);
 }
+
 
 /* Navigation Menu*/
 ul:not(#codingLanguages) {
@@ -73,10 +75,11 @@ li:last-child:not(#codingLanguagesLi) {
   width: 160px;
 }
 .navigationMenu {
-  width: 100%;
-  float: left;
   position: fixed;
-  left: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-left: -22px;
+  margin-right: 0px;
   z-index: 99 !important;
 }
 .navAndTitle {
@@ -90,6 +93,8 @@ li:last-child:not(#codingLanguagesLi) {
 }
 
 
+
+
 /* Title and Header */
 .title {
   margin: 15px;
@@ -99,6 +104,8 @@ li:last-child:not(#codingLanguagesLi) {
   text-align: center;
   margin-bottom: 15px;
 }
+
+
 
 
 /* Body */
@@ -115,6 +122,8 @@ li:last-child:not(#codingLanguagesLi) {
 }
 
 
+
+
 .introHeader {
   font-family: 'Raleway';
   color: dodgerblue;
@@ -122,11 +131,15 @@ li:last-child:not(#codingLanguagesLi) {
 }
 
 
+
+
 .normalIntro {
   font-size: 80%;
   color: #1a65be;
   padding-top: 2px;
 }
+
+
 
 
 a {
@@ -137,11 +150,14 @@ a {
 }
 
 
+
+
 a:hover {
   transition: 0.5s;
   color: #1a65be;
   cursor: pointer;
 }
+
 
 @keyframes fade {
     0%, 50% {
@@ -149,6 +165,7 @@ a:hover {
         transform: scale(0);
     }
 }
+
 
 @keyframes dot-anim {
     0% {
@@ -162,16 +179,14 @@ a:hover {
     }
 }
 
+
 .loader {    
   display: inline-block;  
   animation: fade 1s;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 200px;
-  margin: 0 auto;
-  top: 484px;
+  padding-left: 44%;
+  margin-bottom: 2px;
 }
+
 
 .loader > div{
   float: left;
@@ -188,38 +203,49 @@ a:hover {
   animation-name: dot-anim;
 }
 
+
 .blue{  
   background-color: #4285F4;
 }
+
 
 .pink{
   animation-delay: .2s;  
   background-color: #EA4335;
 }
 
+
 .orange{
   animation-delay: .4s;
   background-color: orange;
 }
+
 
 .green{
   animation-delay: .6s;
   background-color: #34A853;
 }
 
+
 .lightBulbTitle {
   position: fixed;
-  top: 20px;
-  left: 34%;
+  left: 0; right:0;
+  margin: auto;
+  padding-right: 380px;
+  padding-top: 9px;
   z-index: 99 !important;
 }
 
+
 .atomTitle {
   position: fixed;
-  top: 20px;
-  right: 33%;
+  left: 0; right:0;
+  margin: auto;
+  padding-left: 408px;
+  padding-top: 7px;
   z-index: 99 !important;
 }
+
 
 .load-bar {
   position: fixed;
@@ -282,6 +308,7 @@ a:hover {
   background-color: #27ae60;
   animation-delay: .27s;
 }
+
 
 @keyframes loadingBar {
   0% {
