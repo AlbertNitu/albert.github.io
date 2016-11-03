@@ -170,10 +170,10 @@ li:last-child:not(#codingLanguagesLi) {
     font-weight: bold;
     display: inline-block;
     line-height: 0px;
-    padding: 8px 3px;
+    padding: 10px 4px;
     padding-bottom: 10px;
     padding-right: 4px;
-    margin-left: 28px;
+    margin-left: 25px;
 }
 
 .boxclose:before {
