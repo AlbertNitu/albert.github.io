@@ -171,7 +171,9 @@ li:last-child:not(#codingLanguagesLi) {
     display: inline-block;
     line-height: 0px;
     padding: 10px 4px;
+    padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 4px;
     padding-right: 4px;
     margin-left: 25px;
 }
