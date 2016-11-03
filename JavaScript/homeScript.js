@@ -25,3 +25,31 @@ function other() {
   document.getElementById("projectsPage").style.display = "none";
   document.getElementById("otherPage").style.display = "block";
 }
+
+function whatIsMore() {
+  document.getElementById("whatIsMore").style.display = "block";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
+}
+
+function quickLookInside() {
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "block";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
+}
+
+function myBlog() {
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "block";
+  document.getElementById("contactSuggestions").style.display = "none";
+}
+
+function contactSuggestions() {
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "block";
+}
