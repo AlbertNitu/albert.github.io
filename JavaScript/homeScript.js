@@ -95,5 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("browser").innerHTML = "Safari, version " + browserVersion;
     } else if(bowser.opera){
       document.getElementById("browser").innerHTML = "Opera version " + browserVersion;
+    } else {
+      document.getElementById("browser").innerHTML = "A mystery...";
     }
 });
