@@ -85,16 +85,15 @@ document.addEventListener("DOMContentLoaded", function() {
 var browserVersion = bowser.version;
 
 if (bowser.msie) {
-  document.getElementById("browser").innerHTML = "Internet Explorer, version " + browserVersion
+  document.getElementById("browser").innerHTML = "Internet Explorer, version " + browserVersion;
 } else if (bowser.edge){
-  document.getElementById("browser").innerHTML = "Microsoft Edge, version " + browserVersion
+  document.getElementById("browser").innerHTML = "Microsoft Edge, version " + browserVersion;
 } else if (bowser.firefox){
-  document.getElementById("browser").innerHTML = "Mozilla Firefox, version " + browserVersion
+  document.getElementById("browser").innerHTML = "Mozilla Firefox, version " + browserVersion;
 } else if (bowser.chrome){
-  alert(browserVersion);
-  document.getElementById("browser").innerHTML = "Google Chrome, version " + browserVersion
+  document.getElementById("browser").innerHTML = "Google Chrome, version " + browserVersion;
 } else if (bowser.safari){
-  document.getElementById("browser").innerHTML = "Safari, version " + browserVersion
+  document.getElementById("browser").innerHTML = "Safari, version " + browserVersion;
 } else if(bowser.opera){
-  document.getElementById("browser").innerHTML = "Opera version " + browserVersion
+  document.getElementById("browser").innerHTML = "Opera version " + browserVersion;
 }
