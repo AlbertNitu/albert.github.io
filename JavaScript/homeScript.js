@@ -77,6 +77,28 @@ function hideAllLearnMore() {
   document.getElementById("contactSuggestions").style.display = "none";
 }
 
+function GetAddress(lat, lng) {
+  var latlng = new google.maps.LatLng(lat, lng);
+  var geocoder = geocoder = new google.maps.Geocoder();
+  geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        document.getElementById("location").innerHTML = results[0].formatted_address;
+      }
+    }
+  });
+}
+
+function getCoordinates() {
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+     GetAddress(position.coords.latitude,position.coords.longitude)
+      });
+  } else {
+    document.getElementById("location").innerHTML = "An unknown street...";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("screenWidth").innerHTML = screen.width;
     document.getElementById("screenHeight").innerHTML = screen.height;
