@@ -3,6 +3,10 @@ function home() {
   document.getElementById("aboutPage").style.display = "none";  
   document.getElementById("projectsPage").style.display = "none";
   document.getElementById("otherPage").style.display = "none";
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
 }
 
 function about() {
@@ -10,6 +14,10 @@ function about() {
   document.getElementById("aboutPage").style.display = "block";  
   document.getElementById("projectsPage").style.display = "none";
   document.getElementById("otherPage").style.display = "none";
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
 }
 
 function projects() {
@@ -17,6 +25,10 @@ function projects() {
   document.getElementById("aboutPage").style.display = "none";  
   document.getElementById("projectsPage").style.display = "block";
   document.getElementById("otherPage").style.display = "none";
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
 }
 
 function other() {
@@ -24,6 +36,10 @@ function other() {
   document.getElementById("aboutPage").style.display = "none";  
   document.getElementById("projectsPage").style.display = "none";
   document.getElementById("otherPage").style.display = "block";
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
 }
 
 function whatIsMore() {
@@ -52,4 +68,11 @@ function contactSuggestions() {
   document.getElementById("quickLookInside").style.display = "none";  
   document.getElementById("myBlog").style.display = "none";
   document.getElementById("contactSuggestions").style.display = "block";
+}
+
+function hideAllLearnMore() {
+  document.getElementById("whatIsMore").style.display = "none";
+  document.getElementById("quickLookInside").style.display = "none";  
+  document.getElementById("myBlog").style.display = "none";
+  document.getElementById("contactSuggestions").style.display = "none";
 }
