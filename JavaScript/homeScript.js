@@ -76,3 +76,8 @@ function hideAllLearnMore() {
   document.getElementById("myBlog").style.display = "none";
   document.getElementById("contactSuggestions").style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("screenWidth").innerHTML = screen.width;
+    document.getElementById("screenHeight").innerHTML = screen.height;
+});
