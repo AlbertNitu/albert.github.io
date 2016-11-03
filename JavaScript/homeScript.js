@@ -81,3 +81,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("screenWidth").innerHTML = screen.width;
     document.getElementById("screenHeight").innerHTML = screen.height;
 });
+
+if (bowser.msie) {
+  document.getElementById("browser").innerHTML = "Internet Explorer, version " + bowser.version
+} else if (bowser.edge){
+  document.getElementById("browser").innerHTML = "Microsoft Edge, version " + bowser.version
+} else if (bowser.firefox){
+  document.getElementById("browser").innerHTML = "Mozilla Firefox, version " + bowser.version
+} else if (bowser.chrome){
+  document.getElementById("browser").innerHTML = "Google Chrome, version " + bowser.version
+} else if (bowser.safari){
+  document.getElementById("browser").innerHTML = "Chrome, version " + bowser.version
+} else if(bowser.opera){
+  document.getElementById("browser").innerHTML = "Opera version " + bowser.version
+}
