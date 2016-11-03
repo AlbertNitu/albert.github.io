@@ -80,20 +80,20 @@ function hideAllLearnMore() {
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("screenWidth").innerHTML = screen.width;
     document.getElementById("screenHeight").innerHTML = screen.height;
+
+    var browserVersion = bowser.version;
+
+    if (bowser.msie) {
+      document.getElementById("browser").innerHTML = "Internet Explorer, version " + browserVersion;
+    } else if (bowser.edge){
+      document.getElementById("browser").innerHTML = "Microsoft Edge, version " + browserVersion;
+    } else if (bowser.firefox){
+      document.getElementById("browser").innerHTML = "Mozilla Firefox, version " + browserVersion;
+    } else if (bowser.chrome){
+      document.getElementById("browser").innerHTML = "Google Chrome, version " + browserVersion;
+    } else if (bowser.safari){
+      document.getElementById("browser").innerHTML = "Safari, version " + browserVersion;
+    } else if(bowser.opera){
+      document.getElementById("browser").innerHTML = "Opera version " + browserVersion;
+    }
 });
-
-var browserVersion = bowser.version;
-
-if (bowser.msie) {
-  document.getElementById("browser").innerHTML = "Internet Explorer, version " + browserVersion;
-} else if (bowser.edge){
-  document.getElementById("browser").innerHTML = "Microsoft Edge, version " + browserVersion;
-} else if (bowser.firefox){
-  document.getElementById("browser").innerHTML = "Mozilla Firefox, version " + browserVersion;
-} else if (bowser.chrome){
-  document.getElementById("browser").innerHTML = "Google Chrome, version " + browserVersion;
-} else if (bowser.safari){
-  document.getElementById("browser").innerHTML = "Safari, version " + browserVersion;
-} else if(bowser.opera){
-  document.getElementById("browser").innerHTML = "Opera version " + browserVersion;
-}
