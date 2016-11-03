@@ -89,6 +89,7 @@ if (bowser.msie) {
 } else if (bowser.firefox){
   document.getElementById("browser").innerHTML = "Mozilla Firefox, version " + bowser.version
 } else if (bowser.chrome){
+  alert("HI!");
   document.getElementById("browser").innerHTML = "Google Chrome, version " + bowser.version
 } else if (bowser.safari){
   document.getElementById("browser").innerHTML = "Chrome, version " + bowser.version
