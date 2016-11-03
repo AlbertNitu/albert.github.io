@@ -131,7 +131,15 @@ li:last-child:not(#codingLanguagesLi) {
 }
 
 
-
+.learnMore {
+  border: 2px solid #0D47A1;
+  background-color: #42A5F5;
+  width: 98%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 .normalIntro {
   font-size: 80%;
@@ -140,7 +148,16 @@ li:last-child:not(#codingLanguagesLi) {
 }
 
 
+.learnMoreText {
+  transition: 0.7s;
+  color: white;
+}
 
+.learnMoreText:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
 
 a {
   font-weight: bold;
