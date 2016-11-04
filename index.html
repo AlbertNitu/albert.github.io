@@ -1,229 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Albert's website</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.0.0/bowser.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAnLyTgwyECszcuPBdTZk3aFHTUyxUw-0"></script>
+    <script src="JavaScript/homeScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/homeStyle.css">
+    <link rel="shortcut icon" href="Images/brain.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  </head>
 
-
-
-
-<head>
-  <title>Albert's website</title>
-  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.0.0/bowser.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAnLyTgwyECszcuPBdTZk3aFHTUyxUw-0"></script>
-  <script src="JavaScript/homeScript.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="CSS/homeStyle.css">
-  <link rel="shortcut icon" href="Images/brain.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-</head>
-
-
-
-
-<body>
-  <div class="centerImage">
-    <img src="https://freeiconshop.com/files/edd/bulb-curvy-flat.png" class="lightBulbTitle" width=55 height=55 />
-    <img src="https://drslash.com/wp-content/uploads/2014/07/Neutron.png" class="atomTitle" width=60 height=60 />
-  </div>
-  <div class="navAndTitle">
-    <h1 class="title">Albert's Website</h1><div class="navigationMenu" style="position: absolute; z-index: 12;">
-      <ul>
-        <li id="home" onclick="home()">Home</li>
-        <li id="about" onclick="about()">About Me</li>
-        <li id="projects" onclick="projects()">Projects</li>
-        <li id="other" onclick="other()">Other Stuff</li>
-      </ul>
+  <body>
+    
+    <!--Images for title-->
+    <div class="centerImage">
+      <img src="https://freeiconshop.com/files/edd/bulb-curvy-flat.png" class="lightBulbTitle" width=55 height=55 />
+      <img src="https://drslash.com/wp-content/uploads/2014/07/Neutron.png" class="atomTitle" width=60 height=60 />
     </div>
-  <div style="height: 2px; width: 340px; position: fixed; left: 30px; top: 105px; background-color: orange; z-index: 9;"></div>
-  <div style="height: 2px; width: 330px; position: fixed; right: 30px; top: 105px; background-color: orange; z-index: 9;"></div>
-  </div>
-  <br><br><br><br><br><br><br><br>
-  <div id="homePage">
-    <div class="intro"><span class="introHeader">Welcome to Albert's personal website!</span><br>
-      <span class="normalIntro">Here, you can explore more about me, my hobbies, my projects and coding
-        challenges, and more!<br>It's also a chance to play games and other creations that I coded with
-        <a href="http://www.w3schools.com/js/default.asp" target="_blank">Javascript</a>, <a href="http://www.w3schools.com/jquery/default.asp" target="_blank">Jquery</a>, 
-        <a href="http://www.w3schools.com/php/" target="_blank">PHP</a>, <a href="http://www.w3schools.com/sql/default.asp" target="_blank">SQL</a>, and some 
-        <a href="https://www.tutorialspoint.com/python/" target="_blank">Python</a>.<br>All in all, I hope that you have fun on this website and that you learn a little more 
-        (hopefully not <i>too much</i>) about me.<br><span class="introHeader">Enjoy!</span>
-      </span>
-    </div>
-    <div class="intro learnMore" style="margin-top: 10px;">
-      <span class="introHeader" style="color: #0D47A1;">Learn more...</span>
-      <span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="whatIsMore()">What is this website</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="quickLookInside()">A quick look at what's inside</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="myBlog()">My blog</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="about()">About me</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="contactSuggestions()">Contact and suggestions</span><span class="boxclose" onclick="hideAllLearnMore()"></span>
-    </div>
-    <div class="intro" style="margin-top: 5px; display: none;" id="whatIsMore">
-      <span class="introHeader">What is this website?</span><br>
-      <span class="normalIntro">In short, this website serves as my personal website, a website which I hope to put my 
-        coding projects, experiments and other sources I like. In addition, I hope that I will frequently be able to update this website and 
-        expand it along the years.<br>I started this website in 2016, in hopes to making my own personal website a reality; a 
-        website that I could document my projects as well as improve my coding skills.<br>I created this website with 
-        <a href="https://www.github.io" target="_blank">GitHub</a> and I found that it was extremely engagin to use. I recommend that 
-        you use this fantastic service if you're looking to create a website. In addition, I used 
-        <a href="https://codeanywhere.com" target="_blank">Code Anywhere</a> to write my code. It's also a great tool for creating your 
-        personal website. Finally, you can also access my website by typing in <b>v.ht/anitu</b> instead of the entire URL.
-      </span>
-    </div>
-    <div class="intro" style="margin-top: 5px; display: none;" id="quickLookInside">
-      <span class="introHeader">A quick look at what's inside...</span><br>
-      <span class="normalIntro">
-        There are many fun things you'll find on this website... On the projects page, you'll see a list of the projects that I did, such as games like the <i>Snake Game</i>
-        or the classic rock paper scissors. In addition, I'll also list coding experiments that I'm working on right now. (Such as an experiment named <b><i>Cloudr</i></b>, an application similar to <a href="https://www.google.com/drive/" target="_blank">Google Drive</a>)
-        <br>What's more, you can learn a little more about me (on the "About me" page) as well as see other links on the "Other pages" page.
-      </span>
-    </div>
-    <div class="intro" style="margin-top: 5px; display: none;" id="myBlog">
-      <span class="introHeader">My blog!</span><br>
-      <span class="normalIntro">
-        You may be wondering, does this website have a blog? Well, technically, no, but also yes...<br>This is because it's really hard to create my own blog, and allow people to comment. So, to solve the problem, I created a blog page using <a href="https://wordpress.com/">WordPress</a> that you can visit at <a href="https://albertnitu.wordpress.com/">albertnitu.wordpress.com</a>.<br>There, you can comment on anything related to my website and explore my posts.<b> ENJOY!</b>
-      </span>
-    </div>
-    <div class="intro" style="margin-top: 5px; display: none;" id="contactSuggestions">
-      <span class="introHeader">Contact and suggestions!</span><br>
-      <span class="normalIntro">
-        As you may know, nothing's perfect, and <b>anything</b> can be improved. Obviously, the same goes with my website, and I strongly suggest that if you find any bugs, errors, or see anything to improve, don't hesitate to suggest it! You can suggest things as well as report bugs and errors at <b>anitu1@ocdsb.ca</b>...
-      </span>
-    </div>
-    <br>
-    <div class="loader">
-      <div class="blue"></div>
-      <div class="pink"></div>
-      <div class="orange"></div>
-      <div class="green"></div>
-    </div>
-    <br><br>
-    <div style="display: inline-block;">
-      <div class="intro" style="width: 46%; display: inline-block;">
-        <span class="introHeader">How to be awesome:</span><br>
-        <span class="normalIntro">
-          <ul id="codingLanguages">
-            <li id="codingLanguagesLi"><b>Have good hygeine:</b> Make sure to be civilized with people; you don't want people to know you by how dirty and unsanitary you are...</li>
-            <li id="codingLanguagesLi"><b>Have good eating habits:</b> Don't eat just 'cause; you're going to get fat. Also, make sure to eat with your mouth closed, not talk while eating, eat with cutlery (when needed) and <u>always</u> be polite.</li>
-            <li id="codingLanguagesLi"><b>Don't be obnoxious:</b> Being obnoxious, ignorant and loud is not awesome. Try to not make big reactions to things, it makes everyone feel awkward, and creates a bad impression.</li>
-            <li id="codingLanguagesLi"><b>Earn money:</b> Having your parents buy everything for you is not cool. Besides, if you earn your own money, you'll learn how to manage your own money earlier on.</li>
-            <li id="codingLanguagesLi"><b>Speak properly and have good grammar:</b> Try not to use slang words and use shortcuts on chats. Seriously, it's as if you never went to school!</li>
-            <li id="codingLanguagesLi"><b>Use big words:</b> Expand your brain thesaurus, it won't only make you stand out and look smart, but it will help you later in life.</li>
-            <li id="codingLanguagesLi"><b>Don't follow the crowd:</b> Don't be a follower, follow your ideas and make up your own trends. It will make you stand out from the crowd.</li>
-            <li id="codingLanguagesLi"><b>Don't brag and smother people with your own interests:</b> The world isn't only about you, and the more you keep bragging and talking about your interest, the more annoying you will become.</li>
-            <li id="codingLanguagesLi"><b>Try new things that will be unique to you:</b> The more unique aspects and skills you have, the more awesome you'll get!</li>
-            <li id="codingLanguagesLi"><b>Learn and ponder about the world:</b> The more you know about anything, the more knowledge you'll have, which is when you truly become awesome...</li>
-          </ul>
-        </span>
-      </div>
-      <div class="intro" style="width: 46%; position: absolute; right: 10px; display: inline-block;">
-        <span class="introHeader">How to be smart:</span><br>
-        <span class="normalIntro">
-          <ul id="codingLanguages">
-            <li id="codingLanguagesLi"><b>Ration your time:</b> Don't waste all you time on social media or video games. Make sure to leave time (apart from your homework) to learn new stuff.</li>
-            <li id="codingLanguagesLi"><b>Connect what you learn to real life:</b> That way, you'll not only know more about life, but you'll remember stuff you read or learn much more easily.</li>
-            <li id="codingLanguagesLi"><b>Play board and mind games instead of video games:</b> Although video games <i>might</i> improve hand eye coordination, board games will do much more; they'll increase your intelligence.</li>
-            <li id="codingLanguagesLi"><b>Create a goal of stuff you want to learn more about:</b> Like this, you have a goal to shoot for, and in accomplishing it, you'll learn a whole lot more about the world!</li>
-            <li id="codingLanguagesLi"><b>Have smart friends:</b> Although this sounds stupid, having smart friends means that you can learn from them as well as compete with them.</li>
-            <li id="codingLanguagesLi"><b>Learn a new language:</b> Apart from being able to brag that you know a lot of languages, learning a new language also helps form new connections in the brain.</li>
-            <li id="codingLanguagesLi"><b>Explain stuff to others:</b> "If you can't explain it simply, you don't understand it well enough," Albert Einstein said. By explaining topics to other people, you strengthen your memory on that topic.</li>
-            <li id="codingLanguagesLi"><b>Explore a topic in depth:</b> No only will you learn a lot about that particular topic, but along the way, you can also end up learning about a whole variety of other topics!</li>
-            <li id="codingLanguagesLi"><b>Read a lot:</b> Yes, yes, this is very cliché, but it works! The more you read, the more knowledge and connections you'll have!</li>
-            <li id="codingLanguagesLi"><b>Challenge yourself:</b> When you challenge youreslf, you explore new ideas and opinions you never thought were possible. So the next time you have an idea or project to do, go the extra mile to complete it! <b>Good luck!</b></li>
-          </ul>
-        </span>
-      </div>
-    </div>
-    <br><br>
-    <div class="intro"><span class="introHeader">Some things I know about you:</span><br>
-      <span class="normalIntro"><b>Your screen width:</b> <span id="screenWidth"></span><br>
-        <b>Your screen height:</b> <span id="screenHeight"></span><br>
-        <b>Your browser:</b> <span id="browser"></span><br>
-        <b>Where you are right now:</b> <span id="location"><button onclick="getCoordinates()">Find my location!</button></span>
-      </span>
-    </div>
-    <br>
-  </div>
-  <div id="aboutPage" style="display: none;">
-    <div class="intro"><span class="introHeader">A little bit about me...</span><br>
-      <span class="normalIntro">My name is Albert Nitu, a 13 year old boy in grade 8. Since you probably don't know me, let me introduce myself:<br>I am very fascinated about 
-        the world and how everything goes together. In short, I'm interested in anything related to Science and Math and I enjoy learning as much about them as possible. Naturally, that 
-        means that my favorite subjects in school are Science and Math.<br>But those aren't the only things that I like: I also enjoy music and I play the ukulele, piano, clarinet, and the trombone. 
-        (Sort of...) In addition, my favorite genre of music is classical music, and one of my favorite pieces of music (I don't have <i>one</i> favorite music piece) is 
-        <a href="https://www.youtube.com/watch?v=4Tr0otuiQuU" target="_blank">Moonlight Sonata by Beethoven</a>. Lastly, I play grade 8 piano, although I've played songs meant to be for ARCT.
-      </span>
-    </div>
-    <br><br>
-    <div class="intro"><span class="introHeader">My hobbies and passions</span><br>
-      <span class="normalIntro">Along my years, I've had many passions, each coming and going. For example, when I was six, I was really interested in Dinosaurs, and I memorized the name and look 
-        of any dinosaur I read about. (I still remember them to date...)<br>My last passion, which is still "co-existing" with my current passion, was Anatomy & Biology. I started getting interested in anatomy 
-        when I went to a dissection course. (When I was 8 years old) Since then, my passion for anatomy steadily grew, and I started drawing (which is another of my current hobbies) sketches of the insides of animals. (To study their physiology)
-        Then, when I was 9 years old, I decided to write a book about the human body, and I kept on working on it whenever I had time. Finlly, 3 years later, I had completed my book, (which had grown to be 300 pages long) 
-        and I published it. (When I was 12 years old) Since then, I have earned so much more about the human body, and I've memorized every single major cardiovascular vessel, every major nerve, all muscles (with the exception of a few...), 
-        and every part of the Brain and their functions.<br> As of now, I'm (apart from anatomy) interested in coding, and I've created many coding projects (including this website) that I hope to share with you... (Such as an articificial intelligence robot with VBScript)
-      </span>
-    </div>
-    <br><br>
-    <div class="intro"><span class="introHeader">Coding languages in know:</span><br>
-      <span class="normalIntro">I find that coding is really fun to do, and that it will help later in life. If you haven't started coding, I strongly suggest you do, as it's <b>extremely</b> fun to do. You can start 
-        to learn how to code at w3schools, a website that teaches you a ton of programming languages step by step. (And it's really easy to follow, so you'll learn how to code in no time!)<br>Anyhow, I started coding when I was 7 years old, and here 
-        are some coding languages that I know:
-        <ul id="codingLanguages">
-          <li id="codingLanguagesLi">HTML (How could this website have been created without it?)</li>
-          <li id="codingLanguagesLi">CSS (Is there really any other way to style a website without CSS?)</li>
-          <li id="codingLanguagesLi">JavaScript (How else could this website react to what you do?)</li>
-          <li id="codingLanguagesLi">JQuery (A JavaScript library that makes JavaScript <b>much</b> simpler)</li>
-          <li id="codingLanguagesLi">PHP (The language used to "write" to databases)</li>
-          <li id="codingLanguagesLi">SQL (Another language used for server side operations!)</li>
-          <li id="codingLanguagesLi">Python (One, if not <b>the</b> most powerful programming language)</li>
-          <li id="codingLanguagesLi">C/C++ (A language used for almost anything, including robots!)</li>
-          <li id="codingLanguagesLi">Java (I don't think I can get any worse at it though...)</li>
-          <li id="codingLanguagesLi">VBScript (A server side language created by Microsoft)</li>
-          <li id="codingLanguagesLi">Batch (Although I suck at it)</li>
+    
+    <!--Navigation Menu-->
+    <div class="navAndTitle">
+      <h1 class="title">Albert's Website</h1><div class="navigationMenu" style="position: absolute; z-index: 12;">
+        <ul>
+          <li id="home" onclick="home()">Home</li>
+          <li id="about" onclick="about()">About Me</li>
+          <li id="projects" onclick="projects()">Projects</li>
+          <li id="other" onclick="other()">Other Stuff</li>
         </ul>
-      </span>
+      </div>
+      <div style="height: 2px; width: 340px; position: fixed; left: 30px; top: 105px; background-color: orange; z-index: 9;"></div>
+      <div style="height: 2px; width: 330px; position: fixed; right: 30px; top: 105px; background-color: orange; z-index: 9;"></div>
     </div>
-  </div>
-  <div id="projectsPage" style="display: none;">
-    <div class="intro"><span class="introHeader">Experiments</span><br>
-      <span class="normalIntro">- <b>Cloudr</b>: A storage application/experiment that I created similar to Google Drive.
-      </span>
-      <span class="normalIntro">- <b>Weathr</b>: An experiment I created that gets the weather in the city that you live.
-      </span>
+    <br><br><br><br><br><br><br><br>
+    
+    <!--Homepage div-->
+    <div id="homePage">
+      <div class="intro"><span class="introHeader">Welcome to Albert's personal website!</span><br>
+        <span class="normalIntro">Here, you can explore more about me, my hobbies, my projects and coding
+          challenges, and more!<br>It's also a chance to play games and other creations that I coded with
+          <a href="http://www.w3schools.com/js/default.asp" target="_blank">Javascript</a>, <a href="http://www.w3schools.com/jquery/default.asp" target="_blank">Jquery</a>, 
+          <a href="http://www.w3schools.com/php/" target="_blank">PHP</a>, <a href="http://www.w3schools.com/sql/default.asp" target="_blank">SQL</a>, and some 
+          <a href="https://www.tutorialspoint.com/python/" target="_blank">Python</a>.<br>All in all, I hope that you have fun on this website and that you learn a little more 
+          (hopefully not <i>too much</i>) about me.<br><span class="introHeader">Enjoy!</span>
+        </span>
+      </div>
+      <div class="intro learnMore" style="margin-top: 10px;">
+        <span class="introHeader" style="color: #0D47A1;">Learn more...</span>
+        <span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="whatIsMore()">What is this website</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="quickLookInside()">A quick look at what's inside</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="myBlog()">My blog</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="about()">About me</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="contactSuggestions()">Contact and suggestions</span><span class="boxclose" onclick="hideAllLearnMore()"></span>
+      </div>
+      <div class="intro" style="margin-top: 5px; display: none;" id="whatIsMore">
+        <span class="introHeader">What is this website?</span><br>
+        <span class="normalIntro">In short, this website serves as my personal website, a website which I hope to put my 
+          coding projects, experiments and other sources I like. In addition, I hope that I will frequently be able to update this website and 
+          expand it along the years.<br>I started this website in 2016, in hopes to making my own personal website a reality; a 
+          website that I could document my projects as well as improve my coding skills.<br>I created this website with 
+          <a href="https://www.github.io" target="_blank">GitHub</a> and I found that it was extremely engaging to use. I recommend that 
+          you use this fantastic service if you're looking to create a website. In addition, I used 
+          <a href="https://codeanywhere.com" target="_blank">Code Anywhere</a> to write my code. It's also a great tool for creating your 
+          personal website. Finally, you can also access my website by typing in <b>v.ht/anitu</b> instead of the entire URL.
+        </span>
+      </div>
+      <div class="intro" style="margin-top: 5px; display: none;" id="quickLookInside">
+        <span class="introHeader">A quick look at what's inside...</span><br>
+        <span class="normalIntro">
+          There are many fun things you'll find on this website... On the projects page, you'll see a list of the projects that I did, such as games like the <i>Snake Game</i>
+          or the classic rock paper scissors. In addition, I'll also list coding experiments that I'm working on right now. (Such as an experiment named <b><i>Cloudr</i></b>, an application similar to <a href="https://www.google.com/drive/" target="_blank">Google Drive</a>)
+          <br>What's more, you can learn a little more about me (on the "About me" page) as well as see other links on the "Other pages" page.
+        </span>
+      </div>
+      <div class="intro" style="margin-top: 5px; display: none;" id="myBlog">
+        <span class="introHeader">My blog!</span><br>
+        <span class="normalIntro">
+          You may be wondering, does this website have a blog? Well, technically, no, but also yes...<br>This is because it's really hard to create my own blog, and allow people to comment. So, to solve the problem, I created a blog page using <a href="https://wordpress.com/">WordPress</a> that you can visit at <a href="https://albertnitu.wordpress.com/">albertnitu.wordpress.com</a>.<br>There, you can comment on anything related to my website and explore my posts.<b> ENJOY!</b>
+        </span>
+      </div>
+      <div class="intro" style="margin-top: 5px; display: none;" id="contactSuggestions">
+        <span class="introHeader">Contact and suggestions!</span><br>
+        <span class="normalIntro">
+          As you may know, nothing's perfect, and <b>anything</b> can be improved. Obviously, the same goes with my website, and I strongly suggest that if you find any bugs, errors, or see anything to improve, don't hesitate to suggest it! You can suggest things as well as report bugs and errors at <b>anitu1@ocdsb.ca</b>...
+        </span>
+      </div>
+      <br>
+      <div class="loader">
+        <div class="blue"></div>
+        <div class="pink"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+      </div>
+      <br><br>
+      <div style="display: inline-block;">
+        <div class="intro" style="width: 46%; display: inline-block;">
+          <span class="introHeader">How to be awesome:</span><br>
+          <span class="normalIntro">
+            <ul id="codingLanguages">
+              <li id="codingLanguagesLi"><b>Have good hygeine:</b> Make sure to be civilized with people; you don't want people to know you by how dirty and unsanitary you are...</li>
+              <li id="codingLanguagesLi"><b>Have good eating habits:</b> Don't eat just 'cause; you're going to get fat. Also, make sure to eat with your mouth closed, not talk while eating, eat with cutlery (when needed) and <u>always</u> be polite.</li>
+              <li id="codingLanguagesLi"><b>Don't be obnoxious:</b> Being obnoxious, ignorant and loud is not awesome. Try to not make big reactions to things, it makes everyone feel awkward, and creates a bad impression.</li>
+              <li id="codingLanguagesLi"><b>Earn money:</b> Having your parents buy everything for you is not cool. Besides, if you earn your own money, you'll learn how to manage your own money earlier on.</li>
+              <li id="codingLanguagesLi"><b>Speak properly and have good grammar:</b> Try not to use slang words and use shortcuts on chats. Seriously, it's as if you never went to school!</li>
+              <li id="codingLanguagesLi"><b>Use big words:</b> Expand your brain thesaurus, it won't only make you stand out and look smart, but it will help you later in life.</li>
+              <li id="codingLanguagesLi"><b>Don't follow the crowd:</b> Don't be a follower, follow your ideas and make up your own trends. It will make you stand out from the crowd.</li>
+              <li id="codingLanguagesLi"><b>Don't brag and smother people with your own interests:</b> The world isn't only about you, and the more you keep bragging and talking about your interest, the more annoying you will become.</li>
+              <li id="codingLanguagesLi"><b>Try new things that will be unique to you:</b> The more unique aspects and skills you have, the more awesome you'll get!</li>
+              <li id="codingLanguagesLi"><b>Learn and ponder about the world:</b> The more you know about anything, the more knowledge you'll have, which is when you truly become awesome...</li>
+            </ul>
+          </span>
+        </div>
+        <div class="intro" style="width: 46%; position: absolute; right: 10px; display: inline-block;">
+          <span class="introHeader">How to be smart:</span><br>
+          <span class="normalIntro">
+            <ul id="codingLanguages">
+              <li id="codingLanguagesLi"><b>Ration your time:</b> Don't waste all you time on social media or video games. Make sure to leave time (apart from your homework) to learn new stuff.</li>
+              <li id="codingLanguagesLi"><b>Connect what you learn to real life:</b> That way, you'll not only know more about life, but you'll remember stuff you read or learn much more easily.</li>
+              <li id="codingLanguagesLi"><b>Play board and mind games instead of video games:</b> Although video games <i>might</i> improve hand eye coordination, board games will do much more; they'll increase your intelligence.</li>
+              <li id="codingLanguagesLi"><b>Create a goal of stuff you want to learn more about:</b> Like this, you have a goal to shoot for, and in accomplishing it, you'll learn a whole lot more about the world!</li>
+              <li id="codingLanguagesLi"><b>Have smart friends:</b> Although this sounds stupid, having smart friends means that you can learn from them as well as compete with them.</li>
+              <li id="codingLanguagesLi"><b>Learn a new language:</b> Apart from being able to brag that you know a lot of languages, learning a new language also helps form new connections in the brain.</li>
+              <li id="codingLanguagesLi"><b>Explain stuff to others:</b> "If you can't explain it simply, you don't understand it well enough," Albert Einstein said. By explaining topics to other people, you strengthen your memory on that topic.</li>
+              <li id="codingLanguagesLi"><b>Explore a topic in depth:</b> No only will you learn a lot about that particular topic, but along the way, you can also end up learning about a whole variety of other topics!</li>
+              <li id="codingLanguagesLi"><b>Read a lot:</b> Yes, yes, this is very cliché, but it works! The more you read, the more knowledge and connections you'll have!</li>
+              <li id="codingLanguagesLi"><b>Challenge yourself:</b> When you challenge youreslf, you explore new ideas and opinions you never thought were possible. So the next time you have an idea or project to do, go the extra mile to complete it! <b>Good luck!</b></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <br><br>
+      <div class="intro"><span class="introHeader">Some things I know about you:</span><br>
+        <span class="normalIntro"><b>Your screen width:</b> <span id="screenWidth"></span><br>
+          <b>Your screen height:</b> <span id="screenHeight"></span><br>
+          <b>Your browser:</b> <span id="browser"></span><br>
+          <b>Where you are right now:</b> <span id="location"><button onclick="getCoordinates()">Find my location!</button></span>
+        </span>
+      </div>
+      <br>
     </div>
-    <br><br>
-    <div class="intro"><span class="introHeader">Games</span><br>
-      <span class="normalIntro">- <b>Rock, Paper, Scissors</b>: The classic game of rock, paper, scissors turned digital!<br>
-        - <b>Tic Tack Toe</b>: The popular game of tic tac toe but online, against your computer! Can you conquer it and claim the title of master of tic tac toe?<br>
-        - <b>The Snake Game</b>: Guide the snake around the rectangle and collect as many squares without running into the walls or yourself!<br>
-        - <b>The game</b>: A game where you try to win <a href="https://www.wikiwand.com/en/The_Game_(mind_game)" target="_blank">the game</a>!
-      </span>
+    
+    <!--About Me div-->
+    <div id="aboutPage" style="display: none;">
+      <div class="intro"><span class="introHeader">A little bit about me...</span><br>
+        <span class="normalIntro">My name is Albert Nitu, a 13 year old boy in grade 8. Since you probably don't know me, let me introduce myself:<br>I am very fascinated about 
+          the world and how everything goes together. In short, I'm interested in anything related to Science and Math and I enjoy learning as much about them as possible. Naturally, that 
+          means that my favorite subjects in school are Science and Math.<br>But those aren't the only things that I like: I also enjoy music and I play the ukulele, piano, clarinet, and the trombone. 
+          (Sort of...) In addition, my favorite genre of music is classical music, and one of my favorite pieces of music (I don't have <i>one</i> favorite music piece) is 
+          <a href="https://www.youtube.com/watch?v=4Tr0otuiQuU" target="_blank">Moonlight Sonata by Beethoven</a>. Lastly, I play grade 8 piano, although I've played songs meant to be for ARCT.
+        </span>
+      </div>
+      <br><br>
+      <div class="intro"><span class="introHeader">My hobbies and passions</span><br>
+        <span class="normalIntro">Along my years, I've had many passions, each coming and going. For example, when I was six, I was really interested in Dinosaurs, and I memorized the name and look 
+          of any dinosaur I read about. (I still remember them to date...)<br>My last passion, which is still "co-existing" with my current passion, was Anatomy & Biology. I started getting interested in anatomy 
+          when I went to a dissection course. (When I was 8 years old) Since then, my passion for anatomy steadily grew, and I started drawing (which is another of my current hobbies) sketches of the insides of animals. (To study their physiology)
+          Then, when I was 9 years old, I decided to write a book about the human body, and I kept on working on it whenever I had time. Finlly, 3 years later, I had completed my book, (which had grown to be 300 pages long) 
+          and I published it. (When I was 12 years old) Since then, I have earned so much more about the human body, and I've memorized every single major cardiovascular vessel, every major nerve, all muscles (with the exception of a few...), 
+          and every part of the Brain and their functions.<br> As of now, I'm (apart from anatomy) interested in coding, and I've created many coding projects (including this website) that I hope to share with you... (Such as an articificial intelligence robot with VBScript)
+        </span>
+      </div>
+      <br><br>
+      <div class="intro"><span class="introHeader">Coding languages in know:</span><br>
+        <span class="normalIntro">I find that coding is really fun to do, and that it will help later in life. If you haven't started coding, I strongly suggest you do, as it's <b>extremely</b> fun to do. You can start 
+          to learn how to code at w3schools, a website that teaches you a ton of programming languages step by step. (And it's really easy to follow, so you'll learn how to code in no time!)<br>Anyhow, I started coding when I was 7 years old, and here 
+          are some coding languages that I know:
+          <ul id="codingLanguages">
+            <li id="codingLanguagesLi">HTML (How could this website have been created without it?)</li>
+            <li id="codingLanguagesLi">CSS (Is there really any other way to style a website without CSS?)</li>
+            <li id="codingLanguagesLi">JavaScript (How else could this website react to what you do?)</li>
+            <li id="codingLanguagesLi">JQuery (A JavaScript library that makes JavaScript <b>much</b> simpler)</li>
+            <li id="codingLanguagesLi">PHP (The language used to "write" to databases)</li>
+            <li id="codingLanguagesLi">SQL (Another language used for server side operations!)</li>
+            <li id="codingLanguagesLi">Python (One, if not <b>the</b> most powerful programming language)</li>
+            <li id="codingLanguagesLi">C/C++ (A language used for almost anything, including robots!)</li>
+            <li id="codingLanguagesLi">Java (I don't think I can get any worse at it though...)</li>
+            <li id="codingLanguagesLi">VBScript (A server side language created by Microsoft)</li>
+            <li id="codingLanguagesLi">Batch (Although I suck at it)</li>
+          </ul>
+        </span>
+      </div>
     </div>
-    <br><br>
-    <div class="intro"><span class="introHeader">Other projects</span><br>
-      <span class="normalIntro">- <b>Wikipedia search</b>: A project where you can search a topic on <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> or <a href="http://www.wikiwand.com/" target="_blank">Wikiwand</a>.<br>
-        - <b>Searchr</b>: A Chrome Extension I created that allows you to search anything you want with any major search engine. (Google, Yahoo, Bing, Wolfram Alpha, or Ask)
-      </span>
+    
+    <!--Projects div-->
+    <div id="projectsPage" style="display: none;">
+      <div class="intro"><span class="introHeader">Experiments</span><br>
+        <span class="normalIntro">- <b>Cloudr</b>: A storage application/experiment that I created similar to Google Drive.
+        </span>
+        <span class="normalIntro">- <b>Weathr</b>: An experiment I created that gets the weather in the city that you live.
+        </span>
+      </div>
+      <br><br>
+      <div class="intro"><span class="introHeader">Games</span><br>
+        <span class="normalIntro">- <b>Rock, Paper, Scissors</b>: The classic game of rock, paper, scissors turned digital!<br>
+          - <b>Tic Tack Toe</b>: The popular game of tic tac toe but online, against your computer! Can you conquer it and claim the title of master of tic tac toe?<br>
+          - <b>The Snake Game</b>: Guide the snake around the rectangle and collect as many squares without running into the walls or yourself!<br>
+          - <b>The game</b>: A game where you try to win <a href="https://www.wikiwand.com/en/The_Game_(mind_game)" target="_blank">the game</a>!
+        </span>
+      </div>
+      <br><br>
+      <div class="intro"><span class="introHeader">Other projects</span><br>
+        <span class="normalIntro">- <b>Wikipedia search</b>: A project where you can search a topic on <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> or <a href="http://www.wikiwand.com/" target="_blank">Wikiwand</a>.<br>
+          - <b>Searchr</b>: A Chrome Extension I created that allows you to search anything you want with any major search engine. (Google, Yahoo, Bing, Wolfram Alpha, or Ask)
+        </span>
+      </div>
     </div>
-  </div>
-  <div id="otherPage" style="display: none;">
-    <div class="intro"><span class="introHeader">What is this page?</span><br>
-      <span class="normalIntro">Obviously, not every thing I put on my website classifies as a project or about me. So, this page is where I put other pages, utilities, or external links that you can explore.
-        <br><span class="introHeader">Enjoy!</span>
-      </span>
+    
+    <!--Other Stuff div-->
+    <div id="otherPage" style="display: none;">
+      <div class="intro"><span class="introHeader">What is this page?</span><br>
+        <span class="normalIntro">Obviously, not every thing I put on my website classifies as a project or about me. So, this page is where I put other pages, utilities, or external links that you can explore.
+          <br><span class="introHeader">Enjoy!</span>
+        </span>
+      </div>
+      <br><br>
+      <div class="intro"><span class="introHeader">External links</span><br>
+        <span class="normalIntro">- <a href="http://the-awesome-site.site50.net/" title="http://the-awesome-site.site50.net/" target="_blank">The Awesome Site</a>: My friend Eric's website. It's hosted with <a href="https://000webhost.com" target="_blank">000webhost.com</a>, a website hosting service. (P.S. Eric is REALLY good at coding)
+        </span>
+      </div>
+      <br>
+      <div class="intro"><span class="introHeader" style="margin-bottom: 3px;">Utilities (to help you in life)</span><br>
+        <span class="normalIntro">
+          <i class="fa fa-google" aria-hidden="true" style="color: #1a65be;"></i>&nbsp;- <a href="https://google.com/drive" title="https://google.com/drive" target="_blank">Google Drive</a>: A Cloud Storage service where you can store literally anything for free! I highly recommend you use it!<br>
+          <i class="fa fa-certificate" aria-hidden="true" style="color: orange"></i>&nbsp;- <a href="https://www.wolframalpha.com" title="https://wolframalpha.com" target="_blank">Wolfram|Alpha</a>: Have a question or want more information on something? Well, Wolfram|Alpha is the perfect service. It can literally answer <u>any</u> question about anything. (And can solve your homework)
+          <i class="fa fa-newspaper-o" aria-hidden="true" style="color: #EA4335;"></i>&nbsp;- <a href="https://prezi.com" title="https://prezi.com" target="_blank">Prezi</a>: Tired of creating boring presentation? Well, presentation just got upgraded with Prezi! In Prezi, you can easily create an engaging presentation and never worry that your display will be boring.
+        </span>
+      </div>
     </div>
-    <br><br>
-    <div class="intro"><span class="introHeader">External links</span><br>
-      <span class="normalIntro">- <a href="http://the-awesome-site.site50.net/" title="http://the-awesome-site.site50.net/" target="_blank">The Awesome Site</a>: My friend Eric's website. It's hosted with <a href="https://000webhost.com" target="_blank">000webhost.com</a>, a website hosting service. (P.S. Eric is REALLY good at coding)
-      </span>
+    
+    <div class="load-bar">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-    <br>
-    <div class="intro"><span class="introHeader" style="margin-bottom: 3px;">Utilities (to help you in life)</span><br>
-      <span class="normalIntro">
-        <i class="fa fa-google" aria-hidden="true" style="color: #1a65be;"></i>&nbsp;- <a href="https://google.com/drive" title="https://google.com/drive" target="_blank">Google Drive</a>: A Cloud Storage service where you can store literally anything for free! I highly recommend you use it!<br>
-        <i class="fa fa-certificate" aria-hidden="true" style="color: orange"></i>&nbsp;- <a href="https://www.wolframalpha.com" title="https://wolframalpha.com" target="_blank">Wolfram|Alpha</a>: Have a question or want more information on something? Well, Wolfram|Alpha is the perfect service. It can literally answer <u>any</u> question about anything. (And can solve your homework)
-        <i class="fa fa-newspaper-o" aria-hidden="true" style="color: #EA4335;"></i>&nbsp;- <a href="https://prezi.com" title="https://prezi.com" target="_blank">Prezi</a>: Tired of creating boring presentation? Well, presentation just got upgraded with Prezi! In Prezi, you can easily create an engaging presentation and never worry that your display will be boring.
-      </span>
-    </div>
-  </div>
-  <div class="load-bar">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-</body>
+  </body>
 </html>
