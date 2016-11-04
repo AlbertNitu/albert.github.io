@@ -77,6 +77,10 @@ function hideAllLearnMore() {
   document.getElementById("contactSuggestions").style.display = "none";
 }
 
+function weathr() {
+  window.open('https://albertnitu.github.io/weathr.html', '_blank');
+}
+
 function GetAddress(lat, lng) {
   var latlng = new google.maps.LatLng(lat, lng);
   var geocoder = geocoder = new google.maps.Geocoder();
