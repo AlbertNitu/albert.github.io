@@ -189,6 +189,15 @@ li:last-child:not(#codingLanguagesLi) {
           transform: rotate(360deg);
 }
 
+.project {
+  transition: 0.7s;
+}
+
+.project:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 a {
   font-weight: bold;
   transition: 0.5s;
