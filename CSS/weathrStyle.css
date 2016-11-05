@@ -59,6 +59,53 @@ body {
     33.3333% {left: 0; width: 100%;z-index: 10;}
     to {left: 0; width: 100%;}
 }
+ul:not(#codingLanguages) {
+  margin-top: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: 'Raleway';
+  font-size: 130%;
+  width: 100%;
+}
+li:not(#codingLanguagesLi) {
+  float: left;
+  display: inline-block;
+  width: 120px;
+  color: #FFFFFF;
+  background-color: #B0C4DE;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -o-transition: .7s;
+}
+li:hover:not(#codingLanguagesLi), li:active:not(#codingLanguagesLi) {
+  background-color: #D1EDF1;
+  color: #B0C4DE;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+li:nth-child(2):not(#codingLanguagesLi) {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+li:nth-child(3):not(#codingLanguagesLi) {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+li:last-child:not(#codingLanguagesLi) {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 160px;
+}
 
 @font-face {
     font-family: 'weather';
