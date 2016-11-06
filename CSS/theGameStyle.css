@@ -1,11 +1,13 @@
 .theGameButton {
   transition: 0.7s;
-  font-size: 210%;
+  font-size: 130%;
   border: 2px solid #FF9800;
   border-radius: 5px;
   color: #FF9800;
   background-color: #FFCC80;
   padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-family: 'Itim', cursive;
 }
 
@@ -17,7 +19,7 @@
 }
 
 .centerGameButtons {
-  width: 700px;
+  width: 300px;
   margin-left: auto ;
   margin-right: auto ;
 }
