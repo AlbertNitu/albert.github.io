@@ -5,12 +5,14 @@
   border-radius: 5px;
   color: #FF9800;
   background-color: #FFCC80;
+  padding: 5px;
+  font-family: 'Itim', cursive;
 }
 
 .theGameButton:hover {
   transition: 0.7s;
   background-color: #FF9800;
-  cursor: poinpter;
+  cursor: pointer;
   color: white;
 }
 
