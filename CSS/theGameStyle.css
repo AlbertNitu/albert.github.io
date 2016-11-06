@@ -13,3 +13,9 @@
   cursor: poinpter;
   color: white;
 }
+
+.centerGameButtons {
+  width: 700px;
+  margin-left: auto ;
+  margin-right: auto ;
+}
