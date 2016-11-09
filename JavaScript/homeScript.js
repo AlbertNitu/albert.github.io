@@ -77,8 +77,36 @@ function hideAllLearnMore() {
   document.getElementById("contactSuggestions").style.display = "none";
 }
 
+function cloudr() {
+  window.open('https://albertnitu.github.io/cloudr.html', '_blank');
+}
+
 function weathr() {
   window.open('https://albertnitu.github.io/weathr.html', '_blank');
+}
+
+function rockPaperScissors() {
+  window.open('https://albertnitu.github.io/rockPaperScissors.html', '_blank');
+}
+
+function ticTacToe() {
+  window.open('https://albertnitu.github.io/ticTacToe.html', '_blank');
+}
+
+function snakeGame() {
+  window.open('https://albertnitu.github.io/snakeGame.html', '_blank');
+}
+
+function theGame() {
+  window.open('https://albertnitu.github.io/theGame.html', '_blank');
+}
+
+function wikipedia() {
+  window.open('https://albertnitu.github.io/wikipedia.html', '_blank');
+}
+
+function searchr() {
+  window.open('https://albertnitu.github.io/searchr.html', '_blank');
 }
 
 function GetAddress(lat, lng) {
