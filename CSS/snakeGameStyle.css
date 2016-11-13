@@ -14,3 +14,27 @@ canvas {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.intro {
+  padding: 5px;
+  padding-left: 8px;
+  border: 2px solid #f26868;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffcccc;
+  font-family: 'Roboto';
+  font-size: 115%;
+}
+
+.introHeader {
+  font-family: 'Raleway';
+  color: #f26868;
+  font-weight: bold;
+}
+
+.normalIntro {
+  font-size: 80%;
+  color: #ff8787;
+  padding-top: 2px;
+}
