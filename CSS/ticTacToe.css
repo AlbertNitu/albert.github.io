@@ -4,13 +4,8 @@ body {
 
 .centerContent {
   width: 250px ;
-  height: 300px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  margin-left: auto ;
+  margin-right: auto ;
   text-align: center;
 }
 
