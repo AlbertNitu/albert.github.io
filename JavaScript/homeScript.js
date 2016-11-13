@@ -70,11 +70,23 @@ function contactSuggestions() {
   document.getElementById("contactSuggestions").style.display = "block";
 }
 
+function myHobbiesAndPassions() {
+  document.getElementById("myHobbiesAndPassions").style.display = "block";
+  document.getElementById("codingLanguagesIKnow").style.display = "none";  
+}
+
+function codingLanguagesIKnow() {
+  document.getElementById("myHobbiesAndPassions").style.display = "none";
+  document.getElementById("codingLanguagesIKnow").style.display = "block";
+}
+
 function hideAllLearnMore() {
   document.getElementById("whatIsMore").style.display = "none";
   document.getElementById("quickLookInside").style.display = "none";  
   document.getElementById("myBlog").style.display = "none";
   document.getElementById("contactSuggestions").style.display = "none";
+  document.getElementById("myHobbiesAndPassions").style.display = "none";
+  document.getElementById("codingLanguagesIKnow").style.display = "none";
 }
 
 function cloudr() {
