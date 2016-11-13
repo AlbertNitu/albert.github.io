@@ -17,7 +17,6 @@ $(document).ready(function(){
 	
 	function init()
 	{
-		alert(localStorage.getItem("High Score"));
 		d = "right"; //default direction
 		create_snake();
 		create_food(); //Now we can see the food particle
