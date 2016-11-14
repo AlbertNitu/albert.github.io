@@ -1,0 +1,40 @@
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+            .menu
+            {
+                width: 150px;
+                box-shadow: 3px 3px 5px #888888;
+                border-style: solid;
+                border-width: 1px;
+                border-color: grey;
+                border-radius: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                position: fixed;
+                display: none;
+            }
+            
+            .menu-item
+            {
+                height: 21px;
+font-family: 'Raleway';
+transition: 0.7s;
+padding-left: 3px;
+border-radius: 8px;
+            }
+            
+            .menu-item:hover
+            {
+transition: 0.7s;
+                background-color: #6CB5FF;
+                cursor: pointer;
+            }
