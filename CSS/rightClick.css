@@ -21,6 +21,8 @@ body {
                 padding-bottom: 3px;
                 position: fixed;
                 display: none;
+                background-color: white;
+                z-index: 100 !important;
             }
             
             .menu-item
