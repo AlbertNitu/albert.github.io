@@ -6,6 +6,7 @@ body {
   width: 250px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 35px;
   text-align: center;
 }
 
@@ -16,9 +17,10 @@ input {
   margin-bottom: 5px;
   font-weight: bold;
   color: darkorange;
-  font-size: 300%;
+  font-size: 200%;
   width: 50px;
   height: 70px;
+  padding-left: 3px;
 }
 
 input:hover {
