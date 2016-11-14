@@ -377,3 +377,26 @@ a:hover {
     transform: scale(1);
   }
 }
+
+.loader12 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: loader12 1s linear alternate infinite;
+  margin: -50px auto 0;
+  margin-bottom: 38px;
+  margin-top: -26px;
+}
+
+@keyframes loader12 {
+  0% {
+    box-shadow: -60px 40px 0 2px #FF9800, -30px 40px 0 0 #FFE0B2, 0 40px 0 0 #FFE0B2, 30px 40px 0 0 #FFE0B2, 60px 40px 0 0 #FFE0B2; }
+  25% {
+    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 2px #FF9800, 0 40px 0 0 #FFE0B2, 30px 40px 0 0 #FFE0B2, 60px 40px 0 0 #FFE0B2; }
+  50% {
+    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 0 #FFE0B2, 0 40px 0 2px #FF9800, 30px 40px 0 0 #FFE0B2, 60px 40px 0 0 #FFE0B2; }
+  75% {
+    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 0 #FFE0B2, 0 40px 0 0 #FFE0B2, 30px 40px 0 2px #FF9800, 60px 40px 0 0 #FFE0B2; }
+  100% {
+    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 0 #FFE0B2, 0 40px 0 0 #FFE0B2, 30px 40px 0 0 #FFE0B2, 60px 40px 0 2px #FF9800; }
+}
