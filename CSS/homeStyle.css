@@ -390,13 +390,12 @@ a:hover {
 
 @keyframes loader12 {
   0% {
-    box-shadow: -60px 40px 0 2px #FF9800, -30px 40px 0 0 #FFE0B2, 0 40px 0 0 #FFE0B2, 30px 40px 0 0 #FFE0B2, 60px 40px 0 0 #FFE0B2; }
+    box-shadow: -60px 40px 0 2px #FF9800, -30px 40px 0 0 #FFCC80, 0 40px 0 0 #FFCC80, 30px 40px 0 0 #FFCC80, 60px 40px 0 0 #FFCC80; }
   25% {
-    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 2px #FF9800, 0 40px 0 0 #FFE0B2, 30px 40px 0 0 #FFE0B2, 60px 40px 0 0 #FFE0B2; }
+    box-shadow: -60px 40px 0 0 #FFCC80, -30px 40px 0 2px #FF9800, 0 40px 0 0 #FFCC80, 30px 40px 0 0 #FFCC80, 60px 40px 0 0 #FFCC80; }
   50% {
-    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 0 #FFE0B2, 0 40px 0 2px #FF9800, 30px 40px 0 0 #FFE0B2, 60px 40px 0 0 #FFE0B2; }
+    box-shadow: -60px 40px 0 0 #FFCC80, -30px 40px 0 0 #FFCC80, 0 40px 0 2px #FF9800, 30px 40px 0 0 #FFCC80, 60px 40px 0 0 #FFCC80; }
   75% {
-    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 0 #FFE0B2, 0 40px 0 0 #FFE0B2, 30px 40px 0 2px #FF9800, 60px 40px 0 0 #FFE0B2; }
+    box-shadow: -60px 40px 0 0 #FFCC80, -30px 40px 0 0 #FFCC80, 0 40px 0 0 #FFCC80, 30px 40px 0 2px #FF9800, 60px 40px 0 0 #FFCC80; }
   100% {
-    box-shadow: -60px 40px 0 0 #FFE0B2, -30px 40px 0 0 #FFE0B2, 0 40px 0 0 #FFE0B2, 30px 40px 0 0 #FFE0B2, 60px 40px 0 2px #FF9800; }
-}
+    box-shadow: -60px 40px 0 0 #FFCC80, -30px 40px 0 0 #FFCC80, 0 40px 0 0 #FFCC80, 30px 40px 0 0 #FFCC80, 60px 40px 0 2px #FF9800; } }
