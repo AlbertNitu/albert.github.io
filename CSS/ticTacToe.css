@@ -17,6 +17,8 @@ input {
   font-weight: bold;
   color: darkorange;
   font-size: 300%;
+  width: 50px;
+  height: 70px;
 }
 
 input:hover {
@@ -32,9 +34,9 @@ input:hover {
 }
 
 .statusFull {
-  margin-top: 0px;
+  margin-top: 15px;
   line-height: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 180%;
   font-family: 'Raleway';
 }
