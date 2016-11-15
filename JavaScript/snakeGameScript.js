@@ -147,9 +147,9 @@ $(document).ready(function(){
 		var key = e.which;
 		//We will add another clause to prevent reverse gear
 		if(key == "37" || key == "65" && d != "right") d = "left";
-		else if(key == "38" || key == "87" && d != "down") d = "up";
-		else if(key == "39" || key == "68" && d != "left") d = "right";
-		else if(key == "40" || key == "83" && d != "up") d = "down";
+		else if((key == "38" || key == "87") && d != "down") d = "up";
+		else if((key == "39" || key == "68") && d != "left") d = "right";
+		else if((key == "40" || key == "83") && d != "up") d = "down";
 		//The snake is now keyboard controllable
 	})
 	
