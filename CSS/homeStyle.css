@@ -136,24 +136,24 @@ li:last-child:not(#codingLanguagesLi) {
 .article {
   padding: 5px;
   padding-left: 8px;
-  border: 2px solid #ffa700;
+  border: 2px solid #1A237E;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color: #FFCC80;
+  background-color: #9FA8DA;
   font-family: 'Roboto';
   font-size: 115%;
 }
 
 .articleHeader {
   font-family: 'Raleway';
-  color: #ffa700;
+  color: #1A237E;
   font-weight: bold;
 }
 
 .normalArticle {
   font-size: 80%;
-  color: #FF9800;
+  color: #303F9F;
   padding-top: 2px;
 }
 
