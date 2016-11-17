@@ -121,15 +121,41 @@ li:last-child:not(#codingLanguagesLi) {
   font-size: 115%;
 }
 
-
-
-
 .introHeader {
   font-family: 'Raleway';
   color: dodgerblue;
   font-weight: bold;
 }
 
+.normalIntro {
+  font-size: 80%;
+  color: #1a65be;
+  padding-top: 2px;
+}
+
+.article {
+  padding: 5px;
+  padding-left: 8px;
+  border: 2px solid #DB4437;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #f38684;
+  font-family: 'Roboto';
+  font-size: 115%;
+}
+
+.articleHeader {
+  font-family: 'Raleway';
+  color: #DB4437;
+  font-weight: bold;
+}
+
+.normalArticle {
+  font-size: 80%;
+  color: #E53935;
+  padding-top: 2px;
+}
 
 .learnMore {
   border: 2px solid #0D47A1;
@@ -139,12 +165,6 @@ li:last-child:not(#codingLanguagesLi) {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-.normalIntro {
-  font-size: 80%;
-  color: #1a65be;
-  padding-top: 2px;
 }
 
 
