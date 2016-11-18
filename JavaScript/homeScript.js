@@ -42,6 +42,21 @@ function other() {
   document.getElementById("contactSuggestions").style.display = "none";
 }
 
+function toggleIntro() {
+  if (typeof(Storage) !== "undefined") {
+    var introHidden = localStorage.getItem("introHidden")
+    if (introHidden == "yes") {
+      document.getElementById('hideShowIntro').innerHTML = 'Hide intro';
+      document.getElementById('introHideShow').style.display = 'block';
+    } else {
+      document.getElementById('hideShowIntro').innerHTML = 'Show intro';
+      document.getElementById('introHideShow').style.display = 'none';
+    }
+  } else {
+      document.getElementById('hideShowIntro').style.visibility = 'hidden';
+  }
+}
+
 function whatIsMore() {
   document.getElementById("whatIsMore").style.display = "block";
   document.getElementById("quickLookInside").style.display = "none";  
@@ -87,6 +102,22 @@ function hideAllLearnMore() {
   document.getElementById("contactSuggestions").style.display = "none";
   document.getElementById("myHobbiesAndPassions").style.display = "none";
   document.getElementById("codingLanguagesIKnow").style.display = "none";
+}
+
+function hideShowIntroOnStartup() {
+  if (typeof(Storage) !== "undefined") {
+    var introHidden = localStorage.getItem("introHidden")
+    if (introHidden === null) {
+      localStorage.setItem("introHidden", "no");
+    } else {
+      if (introHidden == "yes") {
+        document.getElementById('hideShowIntro').innerHTML = 'Show intro';
+        document.getElementById('introHideShow').style.display = 'none';
+      }
+    }
+  } else {
+      document.getElementById('hideShowIntro').style.visibility = 'hidden';
+  }
 }
 
 function cloudr() {
@@ -144,6 +175,9 @@ function getCoordinates() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    
+    hideShowIntroOnStartup();
+    
     document.getElementById("screenWidth").innerHTML = screen.width;
     document.getElementById("screenHeight").innerHTML = screen.height;
 
