@@ -2,6 +2,9 @@ body, html {
   background-color: #D1EDF1;
 }
 
+*:focus {
+  outline: none;
+}
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -177,6 +180,26 @@ li:last-child:not(#codingLanguagesLi) {
   cursor: pointer;
   color: black;
   font-weight: bold;
+}
+
+.hideShowIntro {
+    transition: 0.7s;
+    position: absolute;
+    right: 15px;
+    top: 160px;
+    padding: 3px;
+    border: 2px solid green;
+    background-color: #80CBC4;
+    border-radius: 5px;
+    font-size: 65%; 
+    font-family: Raleway;
+}
+
+.hideShowIntro:hover {
+  transition: 0.7s;
+  cursor: pointer;
+  color: white;
+  background-color: green;
 }
 
 .boxclose{
