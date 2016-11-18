@@ -41,60 +41,62 @@
     
     <!--Homepage div-->
     <div id="homePage">
-      <button class="hideShowIntro" onclick="toggleIntro()">Hide intro</button>
-      <div class="intro"><span class="introHeader">Welcome to Albert's personal website!</span><br>
-        <span class="normalIntro">Here, you can explore more about me, my hobbies, my projects and coding
-          challenges, and more!<br>It's also a chance to play games and other creations that I coded with
-          <a href="http://www.w3schools.com/js/default.asp" target="_blank">Javascript</a>, <a href="http://www.w3schools.com/jquery/default.asp" target="_blank">Jquery</a>, 
-          <a href="http://www.w3schools.com/php/" target="_blank">PHP</a>, <a href="http://www.w3schools.com/sql/default.asp" target="_blank">SQL</a>, and some 
-          <a href="https://www.tutorialspoint.com/python/" target="_blank">Python</a>.<br>All in all, I hope that you have fun on this website and that you learn a little more 
-          (hopefully not <i>too much</i>) about me.<br><span class="introHeader">Enjoy!</span>
-        </span>
+      <button class="hideShowIntro" onclick="toggleIntro()" id="hideShowIntro">Hide intro</button>
+      <div id="introHideShow">
+        <div class="intro"><span class="introHeader">Welcome to Albert's personal website!</span><br>
+          <span class="normalIntro">Here, you can explore more about me, my hobbies, my projects and coding
+            challenges, and more!<br>It's also a chance to play games and other creations that I coded with
+            <a href="http://www.w3schools.com/js/default.asp" target="_blank">Javascript</a>, <a href="http://www.w3schools.com/jquery/default.asp" target="_blank">Jquery</a>, 
+            <a href="http://www.w3schools.com/php/" target="_blank">PHP</a>, <a href="http://www.w3schools.com/sql/default.asp" target="_blank">SQL</a>, and some 
+            <a href="https://www.tutorialspoint.com/python/" target="_blank">Python</a>.<br>All in all, I hope that you have fun on this website and that you learn a little more 
+            (hopefully not <i>too much</i>) about me.<br><span class="introHeader">Enjoy!</span>
+          </span>
+        </div>
+        <div class="intro learnMore" style="margin-top: 10px;">
+          <span class="introHeader" style="color: #0D47A1;">Learn more...</span>
+          <span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="whatIsMore()">What is this website</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="quickLookInside()">A quick look at what's inside</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="myBlog()">My blog</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="about()">About me</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="contactSuggestions()">Contact and suggestions</span><span class="boxclose" onclick="hideAllLearnMore()"></span>
+        </div>
+        <div class="intro" style="margin-top: 5px; display: none;" id="whatIsMore">
+          <span class="introHeader">What is this website?</span><br>
+          <span class="normalIntro">In short, this website serves as my personal website, a website which I hope to put my 
+            coding projects, experiments and other sources I like. In addition, I hope that I will frequently be able to update this website and 
+            expand it along the years.<br>I started this website in 2016, in hopes to making my own personal website a reality; a 
+            website that I could document my projects as well as improve my coding skills.<br>I created this website with 
+            <a href="https://www.github.io" target="_blank">GitHub</a> and I found that it was extremely engaging to use. I recommend that 
+            you use this fantastic service if you're looking to create a website. In addition, I used 
+            <a href="https://codeanywhere.com" target="_blank">Code Anywhere</a> to write my code. It's also a great tool for creating your 
+            personal website. Finally, you can also access my website by typing in <b>v.ht/anitu</b> instead of the entire URL.
+          </span>
+        </div>
+        <div class="intro" style="margin-top: 5px; display: none;" id="quickLookInside">
+          <span class="introHeader">A quick look at what's inside...</span><br>
+          <span class="normalIntro">
+            There are many fun things you'll find on this website... On the projects page, you'll see a list of the projects that I did, such as games like the <i>Snake Game</i>
+            or the classic rock paper scissors. In addition, I'll also list coding experiments that I'm working on right now. (Such as an experiment named <b><i>Cloudr</i></b>, an application similar to <a href="https://www.google.com/drive/" target="_blank">Google Drive</a>)
+            <br>What's more, you can learn a little more about me (on the "About me" page) as well as see other links on the "Other pages" page.
+          </span>
+        </div>
+        <div class="intro" style="margin-top: 5px; display: none;" id="myBlog">
+          <span class="introHeader">My blog!</span><br>
+          <span class="normalIntro">
+            You may be wondering, does this website have a blog? Well, technically, no, but also yes...<br>This is because it's really hard to create my own blog, and allow people to comment. So, to solve the problem, I created a blog page using <a href="https://wordpress.com/" target="_blank">WordPress</a> that you can visit at <a href="https://albertnitu.wordpress.com/" target="_blank">albertnitu.wordpress.com</a>.<br>There, you can comment on anything related to my website and explore my posts.<b> ENJOY!</b>
+          </span>
+        </div>
+        <div class="intro" style="margin-top: 5px; display: none;" id="contactSuggestions">
+          <span class="introHeader">Contact and suggestions!</span><br>
+          <span class="normalIntro">
+            As you may know, nothing's perfect, and <b>anything</b> can be improved. Obviously, the same goes with my website, and I strongly suggest that if you find any bugs, errors, or see anything to improve, don't hesitate to suggest it! You can suggest things as well as report bugs and errors at <b>anitu1@ocdsb.ca</b>...
+          </span>
+        </div>
+        <br>
+        <div class="loader">
+          <div class="blue"></div>
+          <div class="pink"></div>
+          <div class="orange"></div>
+          <div class="green"></div>
+        </div>
+        <br><br>
       </div>
-      <div class="intro learnMore" style="margin-top: 10px;">
-        <span class="introHeader" style="color: #0D47A1;">Learn more...</span>
-        <span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="whatIsMore()">What is this website</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="quickLookInside()">A quick look at what's inside</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="myBlog()">My blog</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="about()">About me</span><span class="normalIntro learnMoreText" style="padding-left: 30px;" onclick="contactSuggestions()">Contact and suggestions</span><span class="boxclose" onclick="hideAllLearnMore()"></span>
-      </div>
-      <div class="intro" style="margin-top: 5px; display: none;" id="whatIsMore">
-        <span class="introHeader">What is this website?</span><br>
-        <span class="normalIntro">In short, this website serves as my personal website, a website which I hope to put my 
-          coding projects, experiments and other sources I like. In addition, I hope that I will frequently be able to update this website and 
-          expand it along the years.<br>I started this website in 2016, in hopes to making my own personal website a reality; a 
-          website that I could document my projects as well as improve my coding skills.<br>I created this website with 
-          <a href="https://www.github.io" target="_blank">GitHub</a> and I found that it was extremely engaging to use. I recommend that 
-          you use this fantastic service if you're looking to create a website. In addition, I used 
-          <a href="https://codeanywhere.com" target="_blank">Code Anywhere</a> to write my code. It's also a great tool for creating your 
-          personal website. Finally, you can also access my website by typing in <b>v.ht/anitu</b> instead of the entire URL.
-        </span>
-      </div>
-      <div class="intro" style="margin-top: 5px; display: none;" id="quickLookInside">
-        <span class="introHeader">A quick look at what's inside...</span><br>
-        <span class="normalIntro">
-          There are many fun things you'll find on this website... On the projects page, you'll see a list of the projects that I did, such as games like the <i>Snake Game</i>
-          or the classic rock paper scissors. In addition, I'll also list coding experiments that I'm working on right now. (Such as an experiment named <b><i>Cloudr</i></b>, an application similar to <a href="https://www.google.com/drive/" target="_blank">Google Drive</a>)
-          <br>What's more, you can learn a little more about me (on the "About me" page) as well as see other links on the "Other pages" page.
-        </span>
-      </div>
-      <div class="intro" style="margin-top: 5px; display: none;" id="myBlog">
-        <span class="introHeader">My blog!</span><br>
-        <span class="normalIntro">
-          You may be wondering, does this website have a blog? Well, technically, no, but also yes...<br>This is because it's really hard to create my own blog, and allow people to comment. So, to solve the problem, I created a blog page using <a href="https://wordpress.com/" target="_blank">WordPress</a> that you can visit at <a href="https://albertnitu.wordpress.com/" target="_blank">albertnitu.wordpress.com</a>.<br>There, you can comment on anything related to my website and explore my posts.<b> ENJOY!</b>
-        </span>
-      </div>
-      <div class="intro" style="margin-top: 5px; display: none;" id="contactSuggestions">
-        <span class="introHeader">Contact and suggestions!</span><br>
-        <span class="normalIntro">
-          As you may know, nothing's perfect, and <b>anything</b> can be improved. Obviously, the same goes with my website, and I strongly suggest that if you find any bugs, errors, or see anything to improve, don't hesitate to suggest it! You can suggest things as well as report bugs and errors at <b>anitu1@ocdsb.ca</b>...
-        </span>
-      </div>
-      <br>
-      <div class="loader">
-        <div class="blue"></div>
-        <div class="pink"></div>
-        <div class="orange"></div>
-        <div class="green"></div>
-      </div>
-      <br><br>
       <div class="article"><span class="articleHeader"style="display: inline-block;">Articles!</span>
         <img src="https://derickrethans.nl/images/content/mongo-new.png" style="display: inline-block; margin-left: 5px;" width="30" height="20">
         <br>
