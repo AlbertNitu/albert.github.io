@@ -48,9 +48,11 @@ function toggleIntro() {
     if (introHidden == "yes") {
       document.getElementById('hideShowIntro').innerHTML = 'Hide intro';
       document.getElementById('introHideShow').style.display = 'block';
+      localStorage.setItem("introHidden", "no");
     } else {
       document.getElementById('hideShowIntro').innerHTML = 'Show intro';
       document.getElementById('introHideShow').style.display = 'none';
+      localStorage.setItem("introHidden", "yes");
     }
   } else {
       document.getElementById('hideShowIntro').style.visibility = 'hidden';
