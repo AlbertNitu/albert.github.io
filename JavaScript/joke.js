@@ -17,7 +17,7 @@ function getJoke() {
         url: url,
         dataType: 'jsonp',
         error: function(xhr, status, error) {
-            alert(error.message);
+            $("#chuckNorrisJoke").html("Unfortunately, Chuck Norris couldn't find a joke good enough for him.")
         },
         success: apiSuccess
     });
