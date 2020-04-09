@@ -1,3 +1,7 @@
+function redirect() {
+  window.location.replace("http://albertnitu.com/");
+}
+
 function home() {
   document.getElementById("homePage").style.display = "block";
   document.getElementById("aboutPage").style.display = "none";  
